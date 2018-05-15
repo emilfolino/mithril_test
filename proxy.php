@@ -13,7 +13,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 print("setopt");
 // $output contains the output string
 $output = curl_exec($ch);
-
+var_dump($output);
 // close curl resource to free up system resources
 curl_close($ch);
 
