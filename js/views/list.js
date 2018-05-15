@@ -4,10 +4,13 @@ var polisen = require("../models/polisen.js");
 
 module.exports = {
     oninit: function () {
-        console.log("hej oninit");
         polisen.get();
     },
     view: function() {
-        return m("h1", "polisen");
+        return [
+            m("h1", "polisen"),
+            m("div", polisen.list.map(function(event) {
+                return m("p", event.name);
+            }));
     }
 };
