@@ -11,6 +11,7 @@ module.exports = {
             m("h1", "polisen"),
             m("div", polisen.list.map(function(event) {
                 return m("p", event.name);
-            }));
+            }))
+        ];
     }
 };
