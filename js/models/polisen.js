@@ -4,7 +4,7 @@ var polisen = {
     list: [],
     get: function() {
         return m.request({
-            url: "http://www.student.bth.se/~efostud/mithril_test/proxy.php",
+            url: "http://localhost/dbwebb/mithril_test/proxy.php",
             method: "GET"
         }).then(function(result) {
             polisen.list = result;
